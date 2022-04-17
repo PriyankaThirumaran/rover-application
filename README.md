@@ -2,12 +2,20 @@
 This is a golang application that finds the final position of a rover on a rectangular plateau.
 -> Takes user input from CLI and can be accessed through REST API.
 
+Application Workflow:
+A squad of robotic rovers are to be l anded by NASA on a plateau on Mars.
+This plateau, which is curiously rectangular, must be navigated by the rovers so that their on board cameras can get a complete view of the surrounding terrain to send back to Earth.
+A rover's position is represented by a combination of an x and y co-ordinates and a letter representing one of the four cardinal compass points.
+The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
+In order to control a rover, NASA sends a simple string of letters. The possible letters are 'L', 'R' and 'M'. ' L' and ' R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot.
+'M' means move forward one grid point, and maintain the same heading.
+
 Working: (Sample interaction thro' CLI)
 Select any option
 1. Get input through CLI
 2. Get input through REST API
 1
-Enter the upper-right coordinates of the plateau(space separated):
+Enter the upper-right coordinates of the plateau(space separated):(the lower-left coordinates of the plateau are assumed to be 0,0.)
 5 5
 Enter the number of rovers:
 2
