@@ -9,6 +9,7 @@ A rover's position is represented by a combination of an x and y co-ordinates an
 The plateau is divided up into a grid to simplify navigation. An example position might be '0, 0, N' which means the rover is in the bottom left corner and facing North.
 In order to control a rover, NASA sends a simple string of letters. The possible letters are 'L', 'R' and 'M'. ' L' and ' R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot.
 'M' means move forward one grid point, and maintain the same heading.
+Final position(x,y co-ordinates and direction) of the rover will be returned as output.
 
 Working: (Sample interaction thro' CLI)
 Select any option
